@@ -1,0 +1,59 @@
+.colored-icon {
+  display: flex;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  flex: 0 0 70px;
+  align-items: center;
+  justify-content: center;
+
+  &.purple {
+    background-color: rgba(113, 59, 219, 0.05);
+  }
+
+  &.green {
+    background-color: rgba(51, 214, 159, 0.07);
+  }
+
+  &.red {
+    background-color: rgba(255, 76, 97, 0.05);
+  }
+
+  &.blue {
+    background-color: rgba(76, 184, 255, 0.07);
+  }
+
+  &.yellow {
+    background-color: rgba(255, 184, 0, 0.07);
+  }
+
+  &.small {
+    display: flex;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    flex: 0 0 8px;
+    align-items: center;
+    justify-content: center;
+
+    &.purple_s {
+      background: #6F52ED;
+    }
+
+    &.orange_s {
+      background: #FF7A00;
+    }
+    &.yellow_s{
+      background: #FFB800;
+    }
+    &.red_s{
+      background: #FF4C61;
+    }
+    &.green_s{
+      background: #33D69F;
+    }
+
+  }
+
+
+}

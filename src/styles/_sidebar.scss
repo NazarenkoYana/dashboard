@@ -1,0 +1,124 @@
+.sidebar {
+  width: 100px;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  z-index: 4;
+  background-color: #373B53;
+  //margin-right: 25px;
+
+  @include media-breakpoint-down(sm){
+    display: none;
+  }
+
+  .logo_sidebar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6F52ED;
+    width: 100%;
+    height: 100px;
+
+    a {
+      text-decoration: none;
+      display: block;
+
+      img {
+        width: 54px;
+        height: 54px;
+        object-fit: contain;
+      }
+    }
+  }
+
+  .menu_sidebar {
+
+    ul {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      li {
+        list-style-type: none;
+
+        a {
+          display: block;
+          position: relative;
+          min-height: 74px;
+          min-width: 100px;
+
+          //@include media-breakpoint-down(xs){
+          //  min-height: 40px;
+          //}
+          //@include media-breakpoint-down(sm){
+          //  min-height: 40px;
+          //}
+          //@include media-breakpoint-down(md){
+          //  min-height: 40px;
+          //}
+
+          img.not_active_sidebar {
+            width: 24px;
+            height: 24px;
+            display: inline-block;
+            position: absolute;
+            left: 39%;
+            top: 40%;
+            z-index: 6;
+          }
+
+          img.active_sidebar {
+            width: 74px;
+            height: 74px;
+            display: inline-block;
+            position: absolute;
+            left: 13%;
+            top: 15%;
+            z-index: 5;
+          }
+
+          img.active_sidebar {
+            display: none;
+          }
+
+          &:hover {
+
+            img.active_sidebar {
+              display: inline-block;
+            }
+
+            img.not_active_sidebar {
+              display: inline-block;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .divider {
+    position: absolute;
+    bottom: 100px;
+    width: 100%;
+    height: 1px;
+    background-color: #494E67;
+
+    //@include media-breakpoint-down(xs){
+    //  display: none;
+    //}
+    //@include media-breakpoint-down(sm){
+    //  display: none;
+    //}
+  }
+
+  .pull-bottom {
+    position: absolute;
+    bottom: 0;
+    a{
+      margin-bottom: 20px;
+    }
+  }
+}
